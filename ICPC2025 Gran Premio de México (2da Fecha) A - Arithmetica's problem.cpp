@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int l, r, k, cont = 0;
+    cin >> l >> r >> k;
+    for (int i = l; i <= r; i++)
+        if (i%k == 0) cont++;
+    cout << cont;
+}
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    solve();
+    return 0;
+}
